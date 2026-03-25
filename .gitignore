@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+
+# GloVe vectors (2 GB — download separately)
+glove_twitter/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Claude internal memory
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# report
+reports/

@@ -1,0 +1,29 @@
+# ── Core data / ML ────────────────────────────────────────────────────────────
+pandas==3.0.1
+numpy==2.4.3
+scikit-learn==1.8.0
+scipy==1.17.1
+
+# ── NLP ───────────────────────────────────────────────────────────────────────
+nltk==3.9.3
+emoji==2.15.0
+transformers==5.3.0
+tokenizers==0.22.2
+
+# ── Deep learning ─────────────────────────────────────────────────────────────
+# GPU (CUDA 12.4 wheels — compatible with CUDA 12.x drivers):
+#   uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+# CPU fallback:
+#   uv pip install torch torchvision
+
+# ── Visualization ─────────────────────────────────────────────────────────────
+matplotlib==3.10.8
+seaborn==0.13.2
+wordcloud==1.9.6
+pillow==12.1.1
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+tqdm==4.67.3
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+ipykernel==7.2.0
