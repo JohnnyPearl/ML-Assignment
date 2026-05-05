@@ -14,10 +14,8 @@ __pycache__/
 
 # Claude internal memory
 .claude/
+CLAUDE.md
 
 # OS
 .DS_Store
 Thumbs.db
-
-# report
-reports/

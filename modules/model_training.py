@@ -354,6 +354,7 @@ def plot_results_heatmap(results_df: pd.DataFrame, metric: str = "f1_macro",
     ax.set_xlabel("Classifier")
     plt.tight_layout()
     _save_or_show(fig, save_path)
+    return fig  # Add this line
 
 
 def plot_confusion_matrices(results_df: pd.DataFrame, top_n: int = 6,
@@ -390,6 +391,7 @@ def plot_confusion_matrices(results_df: pd.DataFrame, top_n: int = 6,
     plt.suptitle("Confusion Matrices — Top Models", fontsize=14, fontweight="bold", y=1.02)
     plt.tight_layout()
     _save_or_show(fig, save_path)
+    return fig  # Add this line
 
 
 def plot_roc_curves(results_df: pd.DataFrame, y_test: np.ndarray,
@@ -419,6 +421,7 @@ def plot_roc_curves(results_df: pd.DataFrame, y_test: np.ndarray,
     ax.set_ylim([-0.01, 1.01])
     plt.tight_layout()
     _save_or_show(fig, save_path)
+    return fig  # Add this line
 
 
 def plot_top_models_bar(results_df: pd.DataFrame, top_n: int = 10,
@@ -445,7 +448,7 @@ def plot_top_models_bar(results_df: pd.DataFrame, top_n: int = 10,
     ax.set_xlim(0, values.max() * 1.08)
     plt.tight_layout()
     _save_or_show(fig, save_path)
-
+    return fig  # Add this line
 
 # ===========================================================================
 # Hyperparameter tuning
